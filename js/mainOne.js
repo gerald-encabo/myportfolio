@@ -1,4 +1,4 @@
-/*== Shoe Menu ==*/
+/*== Show Menu ==*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -42,19 +42,20 @@ sr.reveal('.home_social-icon', {interval: 400})
 /*== Scroll About ==*/
 sr.reveal('.about_img', {delay: 200})
 sr.reveal('.about_subtitle', {delay: 200})
-sr.reveal('.about_text', {delay: 400})
+sr.reveal('.about_text', {interval: 400})
 
 /*== Scroll Skills ==*/
 sr.reveal('.skills_subtitle', {delay: 200})
 sr.reveal('.skills_text', {delay: 200})
 sr.reveal('.skills_data', {delay: 200})
-sr.reveal('.skills_img', {delay: 400})
+sr.reveal('.skills_img', {interval: 400})
 
 /*== Scroll Portfolio ==*/
-sr.reveal('.portfolio_img', {interval: 200})
+sr.reveal('.portfolio_img', {interval: 400})
 
 /*== Scroll Contact ==*/
 sr.reveal('.contact_subtitle', {delay: 200})
 sr.reveal('.contact_text', {delay: 200})
 sr.reveal('.contact_map', {delay: 200})
-sr.reveal('.contact_container', {delay : 400})
+sr.reveal('.contact_container', {interval : 400})
+

@@ -3,49 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This page use for portfolio purposes" />
         <link rel="stylesheet" href="css/styles.css"> 
-        <!--== Box Icons ==-->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!--== Icons ==-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <title>My Portfolio</title>
     </head>
     <body>
     <!--== Header ==-->
     <header class="nav-header">
         <nav class="nav bd-grid">
-             <div>
-                 <a href="#home" class="nav_logo">Gerald Encabo</a>
-             </div>
+             <a href="#home" class="nav_logo">Gerald Encabo</a>
              <div class="nav_menu" id="nav-menu">
                  <ul class="nav_list">
-                     <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-                     <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-                     <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                     <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li>
-                     <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                     <li class="nav_item"><a data-page="home" href="#home" class="nav_link">Home</a></li>
+                     <li class="nav_item"><a data-page="about" href="#about" class="nav_link">About</a></li>
+                     <li class="nav_item"><a data-page="skills" href="#skills" class="nav_link">Skills</a></li>
+                     <li class="nav_item"><a data-page="portfolio" href="#portfolio" class="nav_link">Portfolio</a></li>
+                     <li class="nav_item"><a data-page="contact" href="#contact" class="nav_link">Contact</a></li>
+                     <div class="nav_active"></div>
                  </ul>
              </div>
              <div class="nav_toggle" id="nav-toggle">
-                 <i class='bx bx-menu'></i>
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
-
     <main class="main">
         <!--== Home ==-->
-        <section class="home bd-grid" id="home">
+        <section class="home section bd-grid" id="home">
             <div class="home-container">
                 <div class="home-item home-item-1">
                         <div class="home_data">
                             <h1 class="home_title">Hi, <br>I'm <span class="home_title-color">Gerald</span><br>Web Developer</h1>
-                            <a href="#contact" class="button">Contact</a>
+                            <a href="#contact" class="home_button">Contact</a>
                         </div>
                         <div class="home_social">
-                            <a href="https://www.linkedin.com/in/gerald-encabo-893a741a7/" class="home_social-icon" title="Linkedin" target="__blank"><i class='bx bxl-linkedin-square' ></i></a>
-                            <a href="https://github.com/geraldencabo" class="home_social-icon" target="__blank"><i title="Github" class='bx bxl-github' ></i></a>
+                            <a href="https://www.linkedin.com/in/gerald-encabo-893a741a7/" class="home_social-icon" title="Linkedin" target="__blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/geraldencabo" class="home_social-icon" title="Github" target="__blank"><i class="fab fa-github"></i></a>
                         </div>
                 </div>
                 <div class="home-item home-item-2">
+                    <div class="home_img">
                         <img src="img/portfolio-img.png" alt="Home Portfolio Image">
+                    </div>
                 </div>
             </div>
         </section>
@@ -56,12 +57,12 @@
              
             <div class="about_container bd-grid">
                 <div class="about_img">
-                    <img src="img/about-img.jpg" alt="About Portfolio Image">
+                    <img src="img/about-img.png" alt="About Portfolio Image">
                 </div>
 
                 <div>
                     <h2 class="about_subtitle">Hi, I'm Gerald</h2>
-                    <p class="about_text">I was born and raised in the Philippines and move to Canada when I was 15 years old, where I have completed my secondary and post-secondary education. I achieved my Computer Programming Diploma at Seneca College and later pursued a Bachelor of Technology - Software Development. During my Degree program, I have worked at Seneca College as a co-op Student Web Developer, where I got my first hands-on experience building and deploying web pages. Now that I have graduated with advanced education and profound experience, I'm ready to fulfill my goal to be a Full-Stack Developer in 10 years.</p>
+                    <p class="about_text">I completed my Computer Programming Diploma at Seneca College and later pursued a Bachelor of Technology - Software Development. During my Degree program, I have worked at Seneca College as a co-op Student Web Developer, where I got my first hands-on experience building and deploying web pages. Now that I have graduated with advanced education and profound experience, I'm ready to fulfill my goal to be a Full-Stack Developer in 10 years.</p>
                 </div>
             </div>
         </section>
@@ -119,7 +120,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="skills_img" src="img/work3.jpg" alt="Programmer working in Mac">
+                    <img class="skills_img" src="img/display0.jpg" alt="Programmer working in Mac">
                 </div>
             </div>
         </section>
@@ -130,13 +131,22 @@
 
             <div class="portfolio_container bd-grid">
                 <div class="portfolio_img">
-                    <a href="#"><img src="img/work1.jpg" alt=""></a>
+                    <a href="https://geraldencabo.github.io/credit-card-app/" target="_blank"><img src="img/display1.png" alt="Credit Card App in React"/></a>
                 </div>
                 <div class="portfolio_img">
-                    <a href="#"><img src="img/work5.jpg" alt=""></a>
+                    <a href="https://geraldencabo.github.io/travel-app/" target="_blank"><img src="img/display2.png" alt="Travel Agency App in React"/></a>
                 </div>
                 <div class="portfolio_img">
-                    <a href="#"><img src="img/work4.jpg" alt=""></a>
+                    <a href="https://geraldencabo.github.io/book-search-app/" target="_blank"><img src="img/display3.png" alt="Book Search App in React using Google Book Api"/></a>
+                </div>
+                <div class="portfolio_img">
+                    <a href="https://geraldencabo.github.io/restaurant-app/" target="_blank"><img src="img/display4.png" alt="Restaurant App in React"/></a>
+                </div>
+                <div class="portfolio_img">
+                    <a href="https://www.senecacollege.ca/home.html" target="_blank"><img src="img/display5.png" alt="Seneca College"/></a>
+                </div>
+                <div class="portfolio_img">
+                    <a href="https://employees.senecacollege.ca/spaces/join-space?spacetojoin=nFl6qPNsqhjD8KR%2Bc6f6jQ%3D%3D&ReturnUrl=/spaces/162/intranet-support/articles/how-to/7597/how-to-edit-your-profile-photo" target="_blank"><img src="img/display6.png" alt="Seneca College Employee Intranet"/></a>
                 </div>
             </div>
         </section>
@@ -154,27 +164,28 @@
                     <span class="contact_text">647-803-3979</span>
 
                     <p class="contact_subtitle"><b>Address</b></p>
-                    <iframe class="contact_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92087.14116605888!2d-79.6140140810084!3d43.84083779320978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b268883243a77%3A0xdd95317585aa054b!2sVaughan%2C%20ON!5e0!3m2!1sen!2sca!4v1620785540750!5m2!1sen!2sca" width="100%" height="262" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                
+                    <span class="contact_text">72 Wilcox Rd, Maple, ON L6A 3R5</span>
                 </div>
-
-                <form class="contact_form" action="https://formsubmit.co/geraldencabo@gmail.com" method="POST" />
-                      <input type="text" placeholder="Name" name="name" class="contact_input" required>
-                      <input type="email" placeholder="Email" email="email" class="contact_input" required>
-                      <textarea placeholder="Message" cols="0" rows="11" class="contact_input"></textarea>
-                      <input type="button" value="Submit" class="contact_button button">
-                </form>
+                <div class="contact_form">
+                    <form action="/index.html" >
+                        <input type="text" placeholder="Name" name="full name" class="contact_input" required />
+                        <input type="email" placeholder="Email" email="email" class="contact_input" required />
+                        <textarea placeholder="Message" cols="0" rows="8" class="contact_input"></textarea>
+                        <input type="button" value="Submit" class="contact_button submit_button">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <!--== Footer ==-->
     <section class="footer section" id="footer">
-         <p class="footer_title">Gerald</p>
+         <p class="footer_title">Gerald Encabo</p>
          <div class="footer_social">
-             <a href="#" title="Facebook" class="footer_icon"><i class='bx bxl-facebook' ></i></a>
-             <a href="#" title="Instagram" class="footer_icon"><i class='bx bxl-instagram' ></i></a>
-             <a href="#" title="Twitter" class="footer_icon"><i class='bx bxl-twitter' ></i></a>
-             <a href="#" title="YouTube" class="footer_icon"><i class='bx bxl-youtube' ></i></a>
+             <a href="#" title="Facebook" class="footer_icon"><i class="fab fa-facebook"></i></a>
+             <a href="#" title="Instagram" class="footer_icon"><i class="fab fa-instagram"></i></a>
+             <a href="#" title="Twitter" class="footer_icon"><i class="fab fa-twitter"></i></a>
+             <a href="#" title="YouTube" class="footer_icon"><i class="fab fa-youtube"></i></a>
          </div>
          <p>&#169; 2021 Copyright all right reserved</p>
     </section>
@@ -183,6 +194,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--== Main JS ==-->
-    <script src="js/main.js"></script>
+    <script src="js/mainOne.js"></script>
+    <script src="js/mainTwo.js"></script>
     </body>
 </html>

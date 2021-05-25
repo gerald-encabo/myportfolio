@@ -1,0 +1,31 @@
+@import 'variables';
+
+/*=== Base ===*/
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: $header-height 0 0 0;
+    font-family: $body-font;
+    font-size: $desktop-normal-font-size;
+    color: $second-color;
+}
+h1, h2, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
