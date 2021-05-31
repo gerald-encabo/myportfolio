@@ -1,6 +1,6 @@
 ## My Portfolio
 
-This respiratory is belongs to my portfolio.
+This is a responsive portfolio webpage on all devices. This webpage's main focus is Html, CSS, Sass, and JavaScript, and I have included a top-quality image & pdf file for my resume.
 
 Link: https://geraldencabo.github.io/myportfolio/
 
