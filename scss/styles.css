@@ -1,6 +1,4 @@
-/*=== Google Fonts ===*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*=== Import Sass ===*/
 /*=== Variables ===*/
 /*=== Colors ===*/
 /*=== Font ===*/
@@ -11,7 +9,6 @@
 /*=== Font ===*/
 /*=== Margins ===*/
 /*=== z Index ===*/
-/*=== Base ===*/
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -48,7 +45,6 @@ img {
   display: block;
 }
 
-/*=== Footer ===*/
 .footer {
   background-color: #0E2431;
   color: #fff;
@@ -72,7 +68,6 @@ img {
   margin: 0 1rem;
 }
 
-/*=== Class CSS ===*/
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -99,7 +94,6 @@ img {
   background-color: #004D99;
 }
 
-/*=== Layout ===*/
 .bd-grid {
   max-width: 1024px;
   display: -ms-grid;
@@ -115,7 +109,6 @@ img {
   margin-right: 1rem;
 }
 
-/*=== Nav ===*/
 .nav-header {
   width: 100%;
   height: 65px;
@@ -187,12 +180,10 @@ img {
   cursor: pointer;
 }
 
-/*=== Show Menu ===*/
 .show {
   right: 0;
 }
 
-/*=== Home ===*/
 .home {
   height: calc(100vh - 3rem);
   row-gap: 2rem;
@@ -275,7 +266,6 @@ img {
   background-color: rgba(0, 77, 153, 0.6);
 }
 
-/*=== Contact Button ===*/
 .nav_button, .home_button, .submit_button {
   display: inline-block;
   color: #fff;
@@ -290,7 +280,6 @@ img {
           box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/*=== About ===*/
 .about {
   row-gap: 2rem;
   text-align: center;
@@ -315,7 +304,6 @@ img {
   background-color: #D3D3D3;
 }
 
-/*=== Skills ===*/
 .skills {
   row-gap: 2rem;
   text-align: center;
@@ -393,7 +381,6 @@ img {
   border-radius: .5rem;
 }
 
-/*=== Portfolio ===*/
 .portfolio {
   text-align: center;
   background-color: #f2f2f2;
@@ -422,7 +409,6 @@ img {
           transform: scale(1.1);
 }
 
-/*=== Contact ===*/
 .contact {
   row-gap: 2rem;
 }
@@ -465,7 +451,6 @@ img {
   margin-left: auto;
 }
 
-/*=== Media Queries ===*/
 @media screen and (min-width: 768px) {
   .bd-grid {
     margin-left: auto;
