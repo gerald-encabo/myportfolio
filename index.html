@@ -168,10 +168,10 @@
                     <span class="contact_text">72 Wilcox Rd, Maple, ON L6A 3R5</span>
                 </div>
                 <div class="contact_form">
-                    <form action="/index.html" >
-                        <input type="text" placeholder="Name" name="full name" class="contact_input" required />
-                        <input type="email" placeholder="Email" email="email" class="contact_input" required />
-                        <textarea placeholder="Message" cols="0" rows="8" class="contact_input"></textarea>
+                    <form action="mail.php" method="POST">
+                        <input type="text" placeholder="Name" name="name" class="contact_input" required />
+                        <input type="email" placeholder="Email" name="email" class="contact_input" required />
+                        <textarea placeholder="Message" name="message" cols="0" rows="8" class="contact_input"></textarea>
                         <input type="button" value="Submit" class="contact_button submit_button">
                     </form>
                 </div>
