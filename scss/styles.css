@@ -209,10 +209,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 5%;
 }
 
@@ -382,7 +382,7 @@ img {
 }
 
 .portfolio {
-  text-align: center;
+  row-gap: 2rem;
   background-color: #f2f2f2;
 }
 
@@ -390,23 +390,44 @@ img {
   row-gap: 2rem;
 }
 
-.portfolio_img {
-  -webkit-box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-          box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: .5rem;
+.portfolio_tile {
+  -webkit-box-shadow: 0 14px 25px rgba(14, 36, 49, 0.15);
+          box-shadow: 0 14px 25px rgba(14, 36, 49, 0.15);
   overflow: hidden;
-  background-color: transparent;
 }
 
-.portfolio_img img {
-  -webkit-transition: 1s;
-  transition: 1s;
+.portfolio_tile-img {
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.portfolio_img img:hover {
+.portfolio_tile-img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.portfolio_tile-desc {
+  background-color: #fff;
+  margin: 0;
+  padding: 15px 20px;
+}
+
+.portfolio .tile-title {
+  color: #004D99;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.portfolio .tile-intro {
+  color: #4b5156;
+  font-size: 0.9rem;
+  padding: 20px 0;
+}
+
+.portfolio .tile-link {
+  text-decoration: none;
+  color: #cc0000;
 }
 
 .contact {
@@ -579,10 +600,12 @@ img {
             flex-direction: row;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    padding: 0 10px;
   }
   .home_social-icon {
     margin-bottom: 0;
     margin-right: 0.5rem;
+    padding: 0 10px;
   }
   .contact_info {
     width: 100%;
@@ -593,7 +616,7 @@ img {
 }
 
 @media screen and (min-width: 1000px) {
-  .about, .skills, .portfolio, .contact {
+  .about, .skills, .portfolio, .contact, .home {
     min-height: calc(80vh - 3rem);
   }
 }

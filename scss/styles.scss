@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import 'media-queries.scss';
 @import 'variables.scss';
-@import 'base.scss';
+@import 'default.scss';
 @import 'footer.scss';
 
 .section {
@@ -116,7 +116,7 @@
     }
     &_social {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 5%;
     }
     &_social-icon {
@@ -245,24 +245,41 @@
 }
 
 .portfolio {
-    text-align: center;
+    row-gap: 2rem;
     background-color: $sectionColor;
 
     &_container {
         row-gap: 2rem;
     }
-    &_img {
-        box-shadow: 0 4px 25px rgba(14,36,49,.15);
-        border-radius: .5rem;
+    &_tile {
+        box-shadow: 0 14px 25px rgba(14,36,49,.15);
         overflow: hidden;
-        background-color: transparent;
     }
-    &_img img {
-        transition: 1s;
-        cursor: pointer
+    &_tile-img {
+        cursor: pointer;
+        object-fit: cover;
     }
-    &_img img:hover {
-        transform: scale(1.1)
+    &_tile-img:hover {
+        transform: scale(1.1);
+    }
+    &_tile-desc {
+        background-color: $third-color;
+        margin: 0;
+        padding: 15px 20px;
+    }
+    .tile-title {
+        color: $first-color;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .tile-intro {
+        color: #4b5156;
+        font-size: 0.9rem;
+        padding: 20px 0;
+    }
+    .tile-link {
+        text-decoration: none; 
+        color: #cc0000;
     }
 }
 
@@ -419,10 +436,12 @@
         &_social {
             flex-direction: row;
             align-self: flex-end;
+            padding: 0 10px;
         }
         &_social-icon {
             margin-bottom: 0;
             margin-right: $mb-1;
+            padding: 0 10px;
         }
     }
 
@@ -437,7 +456,7 @@
 }
 
 @include sectionHeight {
-    .about, .skills, .portfolio, .contact {
+    .about, .skills, .portfolio, .contact, .home {
         min-height: calc(80vh - 3rem);
     }
 }

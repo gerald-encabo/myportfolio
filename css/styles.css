@@ -417,11 +417,6 @@ img {
   cursor: pointer;
 }
 
-.portfolio_img img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 /*=== Contact ===*/
 .contact {
   row-gap: 2rem;
