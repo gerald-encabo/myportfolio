@@ -153,6 +153,7 @@
         border-radius: 50%;
         margin: $mb-3 0;
         background-color: rgba(0,77,153,0.6);
+        box-shadow: 0px 0px 15px -8px black;
     }
 }
 
@@ -182,7 +183,8 @@
     }
     &_img img {
         width: 200px;
-        border-radius: .5rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px -8px black;
         margin-bottom: $mb-3;
         background-color: #D3D3D3;
     }
@@ -240,7 +242,8 @@
         width: 85%;
     }
     &_img {
-        border-radius: .5rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px -8px black;
     }
 }
 
@@ -252,7 +255,8 @@
         row-gap: 2rem;
     }
     &_tile {
-        box-shadow: 0 14px 25px rgba(14,36,49,.15);
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px -8px black;
         overflow: hidden;
     }
     &_tile-img {
