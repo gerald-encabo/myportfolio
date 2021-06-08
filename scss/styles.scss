@@ -27,6 +27,13 @@
         top: 2rem;
         background-color: $first-color;
     }
+    &-subtitle {
+        position: relative;
+        font-size: 1.5rem;
+        color:rgba(0,0,0,0.8);
+        margin-top: $mb-6;
+        margin-bottom: $mb-4;
+    }
 }
 
 .bd-grid {
@@ -73,6 +80,7 @@
     &_item {
         margin-bottom: $mb-4;
     }
+
     &_active {
         position: absolute;
         z-index: -2;
@@ -154,6 +162,9 @@
         margin: $mb-3 0;
         background-color: rgba(0,77,153,0.6);
         box-shadow: 0px 0px 15px -8px black;
+    }
+    &_img img:hover {
+        transform: scale(1.1);
     }
 }
 

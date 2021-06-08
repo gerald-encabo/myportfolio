@@ -22,7 +22,7 @@ function navCheck(entries) {
             nav_active.style.setProperty("left", `${directions.left}px`);
             nav_active.style.setProperty("bottom", "0");
             nav_active.style.setProperty("width", "45px");
-            nav_active.style.setProperty("height", "0.1rem");
+            nav_active.style.setProperty("height", "0.09rem");
             nav_active.style.setProperty("margin-bottom", "1.1rem");
        }
     });

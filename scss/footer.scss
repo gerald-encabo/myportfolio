@@ -1,9 +1,11 @@
+@import 'variables.scss';
+
 .footer {
     background-color: $second-color;
     color: $third-color;
     text-align: center;
     font-weight: $font-semi;
-    padding: 2rem 0;
+    padding: .6rem 0rem;
 
     &_title {
         font-size: 2rem;
